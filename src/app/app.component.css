@@ -1,0 +1,194 @@
+.pageHeading{
+    position: relative;
+    text-align: center;
+    border: solid;
+    background-color: rgba(227, 222, 222,.5);
+    height: 120px;
+    overflow: hidden;
+}
+
+
+.binAnim{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60px;
+    font-size: 20px;
+    background-color: black;
+    color: green;
+}
+
+.binAnim2{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 60px;
+    font-size: 20px;
+    background-color: black;
+    color: green;
+}
+
+.ba1{
+    animation: byteTravel 7s linear infinite;
+}
+
+.ba2{
+    left: 60px;
+    animation: byteTravel 7s linear infinite;
+    animation-delay: 3s;
+}
+
+.ba3{
+    left: 120px;
+    animation: byteTravel 7s linear infinite;
+    animation-delay: 1.5s;
+}
+
+.b1{
+    animation: byteTravel 7s linear infinite;
+}
+
+.b2{
+    right: 60px;
+    animation: byteTravel 7s linear infinite;
+    animation-delay: 3s;
+}
+
+.b3{
+    right: 120px;
+    animation: byteTravel 7s linear infinite;
+    animation-delay: 1.5s;
+}
+
+
+@keyframes byteTravel{
+    0%{
+        top: 0;
+    }
+    5%{
+        top: 0;
+    }
+    15%{
+        top: -80px;
+        color: green;
+    }
+    16%{
+        color: red;
+    }
+    20%{
+        color: red;
+    }
+    24%{
+        color: red;
+    }
+    25%{
+        top: -80px;
+        color: green;
+    }
+    35%{
+        top: -160px;
+    }
+    45%{
+        top: -160px;
+    }
+    55%{
+        top: -240px;
+        color: green;
+    }
+    56%{
+        color: blue;
+    }
+    64%{
+        color: blue;
+    }
+    65%{
+        top:-240px;
+        color: green;
+    }
+    75%{
+        top: -160px;
+    }
+    85%{
+        top: -160px;
+    }
+    95%{
+        top: -80px;
+    }
+
+    100%{
+        top: 0;
+    }
+}
+
+.pageBody{
+    position: relative;
+}
+
+.myNav{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(227, 222, 222,.5);
+    width: 15%;
+    font-size: 20px;
+    position: relative;
+    text-align: right;
+}
+
+.navButton{
+    overflow: hidden;
+    position: relative;
+    padding-right: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: solid;
+    cursor: pointer;
+}
+
+.navButton::before{
+    position: absolute;
+    content: "";
+    background-color: #008c25;
+    top: -50px;
+    left: -60px;
+    width: 50px;
+    height: 200px;
+    transform: rotate(-45deg);
+    transition: 1.2s;
+    z-index: -1;
+    border: solid;
+    border-width: 3px;
+}
+
+.navButton::after{
+    position: absolute;
+    content: "";
+    background-color: #008c25;
+    bottom: -50px;
+    right: -60px;
+    width: 50px;
+    height: 200px;
+    transform: rotate(-45deg);
+    transition: 1.2s;
+    z-index: -1;
+    border: solid;
+    border-width: 3px;
+}
+
+.navButton:hover::before{
+    width: 150px;
+    border: none;
+}
+
+.navButton:hover::after{
+    width: 150px;
+    border: none;
+}
+
+.pageContent{
+    position: absolute;
+    top: 0;
+    left: 15%;
+    right: 0;
+    text-align: center;
+}
