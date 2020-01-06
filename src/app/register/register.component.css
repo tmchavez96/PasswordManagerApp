@@ -1,0 +1,71 @@
+.loginForm{
+    background-color: #5cd65e;
+    width: 80%;
+    margin-left: 10%;
+    border: solid;
+    border-width: 5px;
+}
+
+.formHeader{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #38783a;
+    border-bottom: solid;
+}
+
+.formField{
+    position: relative;
+    padding-bottom: 40px;
+    padding-top: 50px;
+    display: flex;
+}
+
+.formL{
+    width: 50%;
+    font-size: 20px;
+}
+
+.formI{
+    position: absolute;
+    background: white;
+    width: 40%;
+    left: 55%;
+    top: 40%;
+    transition: 0.5s;
+    height: 20px;
+    border: solid;
+    border-width: 3px;
+    border-radius: 2px;
+}
+
+.formI:hover{
+    height: 30px;
+    width: 45%;
+    left: 52%;
+    top: 36%;
+    border-color: red;
+}
+
+.formText{
+    position: absolute;
+    text-align: center;
+    width:99%;
+    border: none;
+    left: 0;
+    bottom: 0;
+    height: 18px;
+    transition: 0.5s;
+}
+
+.formText:hover{
+    height: 28px;
+}
+
+.formSub{
+    width: 30%;
+    margin-left: 35%;
+    cursor: pointer;
+    height: 40px;
+    border: solid black 3px;
+    border-radius: 2px;
+}
